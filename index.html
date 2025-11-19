@@ -1,45 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>G-IA Soluciones | Innovación IA</title>
-  <style>
-    body {
-      background: #000;
-      color: #f4c542;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-    p {
-      font-size: 1.2rem;
-      opacity: 0.8;
-    }
-    .pulse {
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0% { opacity: .3; }
-      50% { opacity: 1; }
-      100% { opacity: .3; }
-    }
-  </style>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Meta para evitar caching extremo (opcional) -->
+  <meta http-equiv="Cache-control" content="no-cache">
 </head>
 <body>
-  <h1>G-IA Soluciones</h1>
-  <p class="pulse">Potenciando empresas mediante IA</p>
-  <p>🚀 Sitio en construcción</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>G-IA Soluciones</h1>
+        <p class="subtitle">Potenciando empresas mediante Inteligencia Artificial</p>
+      </div>
+    </div>
+  </header>
 
+  <main class="container main-content">
+
+    <section class="services-section" aria-label="Servicios">
+      <h2 class="section-title">Servicios que ofrezco</h2>
+
+      <div class="accordion" id="servicesAccordion">
+
+        <!-- 1 -->
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false" aria-controls="svc-1" id="svc-1-btn">
+            <span class="icon">⚡</span>
+            <span class="label">Automatizaciones con IA</span>
+            <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+          </button>
+          <div id="svc-1" class="accordion-panel" role="region" aria-labelledby="svc-1-btn">
+            <ul>
+              <li>Crear automatizaciones reales con Make, Zapier, n8n.</li>
+              <li>Integrar IA a flujos de trabajo.</li>
+              <li>Hacer bots que respondan mails y procesen formularios.</li>
+              <li>Crear procesos automáticos para empresas.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false" aria-controls="svc-2" id="svc-2-btn">
+            <span class="icon">🤖</span>
+            <span class="label">Bots personalizados</span>
+            <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+          </button>
+          <div id="svc-2" class="accordion-panel" role="region" aria-labelledby="svc-2-btn">
+            <ul>
+              <li>Bots con OpenAI, Botpress, ManyChat.</li>
+              <li>Bots para WhatsApp, Instagram y Web.</li>
+              <li>Entrenamiento de bots con documentos del cliente.</li>
+              <li>Workflows conversacionales para soporte y ventas.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false" aria-controls="svc-3" id="svc-3-btn">
+            <span class="icon">🧠</span>
+            <span class="label">Diseño de sistemas con IA</span>
+            <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+          </button>
+          <div id="svc-3" class="accordion-panel" role="region" aria-labelledby="svc-3-btn">
+            <ul>
+              <li>Arquitectura completa de sistemas inteligentes.</li>
+              <li>Diagramas de flujo y lógica de decisiones.</li>
+              <li>Diseño de pipelines y procesos escalables.</li>
+              <li>Integraciones seguras con APIs y fuentes de datos.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false" aria-controls="svc-4" id="svc-4-btn">
+            <span class="icon">💼</span>
+            <span class="label">Consultoría en IA</span>
+            <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+          </button>
+          <div id="svc-4" class="accordion-panel" role="region" aria-labelledby="svc-4-btn">
+            <ul>
+              <li>Diagnóstico de necesidades y viabilidad.</li>
+              <li>Roadmap de implementación y priorización.</li>
+              <li>Capacitación y documentación para equipos.</li>
+              <li>Asistencia en selección de tecnologías y proveedores.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false" aria-controls="svc-5" id="svc-5-btn">
+            <span class="icon">🔧</span>
+            <span class="label">Optimización de procesos</span>
+            <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+          </button>
+          <div id="svc-5" class="accordion-panel" role="region" aria-labelledby="svc-5-btn">
+            <ul>
+              <li>Detección de cuellos de botella.</li>
+              <li>Reducción de tareas manuales repetitivas.</li>
+              <li>Mejora de tiempos y costes operativos.</li>
+              <li>Automatizaciones integradas para eficiencia.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false" aria-controls="svc-6" id="svc-6-btn">
+            <span class="icon">📣</span>
+            <span class="label">Marketing con IA</span>
+            <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+          </button>
+          <div id="svc-6" class="accordion-panel" role="region" aria-labelledby="svc-6-btn">
+            <ul>
+              <li>Creación de contenido optimizado con IA.</li>
+              <li>Automatización del calendario de contenidos.</li>
+              <li>Segmentación y personalización con ML.</li>
+              <li>Análisis y optimización de campañas.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false" aria-controls="svc-7" id="svc-7-btn">
+            <span class="icon">📊</span>
+            <span class="label">Análisis de datos</span>
+            <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+          </button>
+          <div id="svc-7" class="accordion-panel" role="region" aria-labelledby="svc-7-btn">
+            <ul>
+              <li>Limpieza y organización de datos.</li>
+              <li>Análisis descriptivo y predictivo.</li>
+              <li>Dashboards interactivos y automatizados.</li>
+              <li>Informes ejecutivos periódicos.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div> <!-- accordion -->
+    </section>
+
+  </main>
+
+  <!-- Contact section fixed bottom -->
+  <div class="contact-bar" role="contentinfo">
+    <div class="container contact-inner">
+      <div class="contact-cta">
+        <span class="contact-label">Contactame</span>
+
+        <!-- WhatsApp button -->
+        <a class="contact-btn" href="https://wa.me/543515527394" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+          <span class="icon-wrap">
+            <!-- round outline circle -->
+            <svg class="icon-circle" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>
+            <!-- whatsapp outline path -->
+            <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.5 3.5a10 10 0 1 0-14 13.8L3 21l3.7-1.1A10 10 0 0 0 20.5 3.5zM17 14.5c-.3.8-1.6 1.6-2 1.7-.5.1-1.1.1-2.2-.2-1.2-.3-4-1.8-5.2-3.4-.7-.9-.8-1.5-.8-2.1 0-.6.4-1.1.6-1.4.1-.3.3-.4.5-.4.1 0 .2 0 .3 0 .1 0 .3 0 .4.1.2.1.3.4.4.6.1.2.2.4.3.5.1.2.1.4 0 .6-.1.2-.2.5-.2.7-.1.3 0 .6.1.9.1.3.7 1.5 1.6 2.3 1 .9 1.8 1.5 2.5 1.9.7.4 1.3.5 1.8.5.5 0 .9 0 1.2-.1.3-.1.8-.3 1.1-.7.2-.2.5-.4.6-.6.1-.3 0-.7-.3-1z" />
+            </svg>
+          </span>
+          <span class="btn-text">Contáctame por WhatsApp</span>
+        </a>
+
+        <!-- Email button -->
+        <a class="contact-btn" href="mailto:julianabelgiardino2@gmail.com" aria-label="Enviar email">
+          <span class="icon-wrap">
+            <svg class="icon-circle" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>
+            <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 7.5v9A2.5 2.5 0 0 0 5.5 19h13A2.5 2.5 0 0 0 21 16.5v-9A2.5 2.5 0 0 0 18.5 5h-13A2.5 2.5 0 0 0 3 7.5zm1 .7L12 12.9l8-4.7V7.5L12 12.1 4 7.5z"/></svg>
+          </span>
+          <span class="btn-text">Enviar Email</span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© 2025 G-IA Soluciones — Innovación impulsada por Inteligencia Artificial</small>
+    </div>
+  </footer>
+
+  <!-- Script -->
   <script src="scripts.js"></script>
 </body>
 </html>
+
