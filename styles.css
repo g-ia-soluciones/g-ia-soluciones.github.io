@@ -150,7 +150,7 @@ body{
   max-height: 0;
   overflow: hidden;
   transition: max-height 420ms cubic-bezier(.2,.9,.2,1);
-  padding: 0 20px; /* laterales siempre */
+  padding: 0 20px;
   background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.015));
 }
 
@@ -264,7 +264,7 @@ body{
 /* Footer */
 .site-footer{
   margin-top:60px;
-  padding:26px 0 80px;
+  padding:26px 0 120px;   /* AUMENTADO PARA QUE NO LO TAPE LA BARRA EN ESCRITORIO */
   text-align:center;
   color:var(--muted);
   font-size:13px;
@@ -278,6 +278,11 @@ body{
   .contact-inner{ gap:12px; padding:8px; }
   .btn-text{ display:none; }
   .contact-label{ display:none; }
+
+  /* En móvil volvemos a dejar el footer normal */
+  .site-footer{
+    padding-bottom:80px;
+  }
 }
 
 @media (max-width:520px){
@@ -286,4 +291,3 @@ body{
   .contact-bar{ bottom:12px; }
   .contact-inner{ padding:6px; }
 }
-/*
