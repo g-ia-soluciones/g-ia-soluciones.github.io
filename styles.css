@@ -287,5 +287,38 @@ body{
   }
 }
 
+/* LOGO AL LADO DEL TÍTULO */
+.brand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.brand-logo{
+  width: 55px;      /* Tamaño ideal para que no tape nada */
+  height: auto;
+  filter: drop-shadow(0 0 12px rgba(255,206,84,0.35));
+  opacity: 0.95;
+}
+
+.brand-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 600px){
+  .brand{
+    flex-direction: column;
+    gap: 8px;
+  }
+  .brand-text{
+    align-items: center;
+  }
+  .brand-logo{
+    width: 75px; /* un poco más grande en móvil */
+  }
+}
 /* refresh-fix-01 */
 
