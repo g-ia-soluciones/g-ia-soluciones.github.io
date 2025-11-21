@@ -43,27 +43,7 @@ body{
   text-align:center;
 }
 
-/* Marca + Logo */
-.brand{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-}
-
-.brand-logo{
-  width: 34px; /* AJUSTE 34px — ELEGANTE Y PROPORCIONAL */
-  height: auto;
-  filter: drop-shadow(0 0 8px rgba(255,206,84,0.45));
-  opacity: 0.95;
-}
-
-.brand-text{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
+/* TITULO */
 .brand h1{
   margin:0;
   font-weight:700;
@@ -80,7 +60,28 @@ body{
   font-size:14px;
 }
 
-/* Responsive logo */
+/* BRAND + LOGO */
+.brand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.brand-logo{
+  width: 55px; /* tamaño original que vos querías */
+  height: auto;
+  filter: drop-shadow(0 0 12px rgba(255,206,84,0.35));
+  opacity: 0.95;
+}
+
+.brand-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Responsive Logo */
 @media (max-width: 600px){
   .brand{
     flex-direction: column;
@@ -90,7 +91,7 @@ body{
     align-items: center;
   }
   .brand-logo{
-    width: 48px; /* proporcional en móvil */
+    width: 75px; /* original mobile */
   }
 }
 
@@ -223,7 +224,7 @@ body{
   backdrop-filter: blur(6px);
 }
 
-/* ICONOS WHATSAPP Y GMAIL */
+/* ICONOS WHATSAPP / GMAIL */
 .whatsapp-icon{
   stroke:#25D366;
   fill:none;
