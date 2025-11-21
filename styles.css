@@ -52,9 +52,9 @@ body{
 }
 
 .brand-logo{
-  width: 75px; /* MÁS GRANDE */
+  width: 48px; /* AJUSTE PROPORCIONAL */
   height: auto;
-  filter: drop-shadow(0 0 12px rgba(255,206,84,0.35));
+  filter: drop-shadow(0 0 8px rgba(255,206,84,0.45)); /* BORDE LUMINOSO */
   opacity: 0.95;
 }
 
@@ -90,7 +90,7 @@ body{
     align-items: center;
   }
   .brand-logo{
-    width: 90px; /* un poco más grande en móvil */
+    width: 62px; /* proporcional en móvil */
   }
 }
 
@@ -223,7 +223,7 @@ body{
   backdrop-filter: blur(6px);
 }
 
-/* ICONOS WHATSAPP Y GMAIL (LOS QUE YA TENÍAS) */
+/* ICONOS WHATSAPP Y GMAIL */
 .whatsapp-icon{
   stroke:#25D366;
   fill:none;
@@ -323,5 +323,6 @@ body{
 }
 
 /* refresh-fix-01 */
+
 
 
