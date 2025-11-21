@@ -11,7 +11,8 @@
   --radius: 12px;
 }
 
-*{box-sizing: border-box}
+/* Global reset */
+*{ box-sizing: border-box }
 
 body{
   margin:0;
@@ -62,36 +63,36 @@ body{
 
 /* BRAND + LOGO */
 .brand{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap: 12px;
 }
 
 .brand-logo{
-  width: 28px;   /* LOGO PEQUEÑO (pedido por vos) */
-  height: auto;
-  filter: drop-shadow(0 0 12px rgba(255,206,84,0.35));
-  opacity: 0.95;
+  width: 34px;     /* <<< tamaño solicitado */
+  height:auto;
+  filter: drop-shadow(0 0 8px rgba(255,206,84,0.45));
+  opacity:0.95;
 }
 
 .brand-text{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
 }
 
 /* Responsive Logo */
 @media (max-width: 600px){
   .brand{
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
   }
   .brand-text{
     align-items: center;
   }
   .brand-logo{
-    width: 36px; /* pequeño también en mobile */
+    width: 48px;  /* versión móvil */
   }
 }
 
@@ -175,7 +176,7 @@ body{
   transform: translateY(-1px);
 }
 
-/* accordion panel */
+/* Accordion panel */
 .accordion-panel{
   max-height: 0;
   overflow: hidden;
@@ -324,6 +325,7 @@ body{
 }
 
 /* refresh-fix-01 */
+
 
 
 
