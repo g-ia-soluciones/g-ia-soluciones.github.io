@@ -320,5 +320,21 @@ body{
     width: 75px; /* un poco más grande en móvil */
   }
 }
+/* LOGO AL LADO DEL TITULO */
+.site-logo{
+  width:46px;
+  height:46px;
+  object-fit:contain;
+  margin-right:10px;
+  filter: drop-shadow(0 0 6px rgba(255,206,84,0.3));
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+}
+
 /* refresh-fix-01 */
 
